@@ -1,0 +1,131 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║                  UJWAL MOJIDRA - PORTFOLIO SETUP                   ║
+║                   Apple-Inspired Design Portfolio                  ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+📦 WHAT'S INCLUDED:
+─────────────────────────────────────────────────────────────────────
+✅ Complete React portfolio website
+✅ Your 5 images (profile + 3 achievement photos)
+✅ All source code with Framer Motion animations
+✅ Shadcn UI components
+✅ Tailwind CSS styling
+✅ README.md documentation
+✅ .gitignore file
+
+
+🚀 QUICK START (3 Steps):
+─────────────────────────────────────────────────────────────────────
+
+1️⃣  EXTRACT THE ZIP
+    - Extract ujwal-portfolio.zip to your desired location
+    - You'll get a "frontend" folder
+
+2️⃣  INSTALL DEPENDENCIES
+    Open terminal in the "frontend" folder and run:
+    
+    npm install
+    OR
+    yarn install
+    
+    (This will take 2-3 minutes)
+
+3️⃣  START THE APP
+    npm start
+    OR
+    yarn start
+    
+    🌐 Your portfolio will open at: http://localhost:3000
+
+
+📁 FOLDER STRUCTURE:
+─────────────────────────────────────────────────────────────────────
+frontend/
+├── src/
+│   ├── data/mock.js          ← Edit your content here
+│   ├── pages/Home.js         ← Main portfolio page
+│   ├── components/ui/        ← UI components
+│   └── ...
+├── public/
+│   └── images/               ← Your images
+├── package.json
+├── tailwind.config.js
+└── README.md
+
+
+🎨 CUSTOMIZE YOUR PORTFOLIO:
+─────────────────────────────────────────────────────────────────────
+
+📝 Update Content:
+   File: src/data/mock.js
+   - Change personal info
+   - Update projects, skills, achievements
+   - Modify social links
+
+🖼️  Replace Images:
+   Folder: public/images/
+   - Keep the same filenames OR
+   - Update paths in mock.js
+
+🎨 Change Colors:
+   File: tailwind.config.js
+   - Modify color scheme
+   - Adjust fonts
+
+
+🌐 PUSH TO GITHUB:
+─────────────────────────────────────────────────────────────────────
+
+cd frontend
+git init
+git add .
+git commit -m "Initial commit: Portfolio"
+git remote add origin https://github.com/ujwal373/YOUR-REPO-NAME.git
+git push -u origin main
+
+
+🚀 DEPLOY TO VERCEL (Recommended):
+─────────────────────────────────────────────────────────────────────
+
+1. Push code to GitHub (see above)
+2. Go to vercel.com
+3. Click "New Project"
+4. Import your GitHub repository
+5. Click "Deploy"
+6. Done! Your site is live 🎉
+
+
+📊 BUILD FOR PRODUCTION:
+─────────────────────────────────────────────────────────────────────
+
+npm run build
+OR
+yarn build
+
+This creates an optimized "build" folder you can deploy anywhere.
+
+
+❓ TROUBLESHOOTING:
+─────────────────────────────────────────────────────────────────────
+
+Problem: "Command not found: npm"
+Solution: Install Node.js from nodejs.org
+
+Problem: Images not showing
+Solution: Check that images are in public/images/ folder
+
+Problem: Styling looks broken
+Solution: Run "npm install" to install all dependencies
+
+
+📧 CONTACT:
+─────────────────────────────────────────────────────────────────────
+Ujwal Mojidra
+Email: ujwal.mojidra@ucdconnect.ie
+GitHub: github.com/ujwal373
+LinkedIn: linkedin.com/in/ujwalmojidra/
+
+
+═══════════════════════════════════════════════════════════════════
+Built with ❤️ using Emergent AI | November 2025
+═══════════════════════════════════════════════════════════════════
