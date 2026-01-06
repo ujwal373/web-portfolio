@@ -1,6 +1,6 @@
-# Ujwal Mojidra - Portfolio Website
+# Portfolio Website
 
-Apple-inspired portfolio website showcasing data analytics and AI engineering work.
+Portfolio website showcasing data analytics and AI engineering work.
 
 ## 🚀 Features
 
@@ -63,10 +63,7 @@ npm run build
 ## 📧 Contact
 
 Ujwal Mojidra
-- Email: ujwal.mojidra@ucdconnect.ie
+- Email: ujwal.mojidra@gmail.com
 - LinkedIn: [ujwalmojidra](https://www.linkedin.com/in/ujwalmojidra/)
 - GitHub: [ujwal373](https://github.com/ujwal373)
 
----
-
-Built with ❤️ using Emergent AI
