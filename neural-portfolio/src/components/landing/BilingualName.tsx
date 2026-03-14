@@ -14,8 +14,7 @@ export default function BilingualName() {
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-8xl md:text-9xl lg:text-[12rem] font-bold font-hindi text-white whitespace-nowrap pointer-events-none select-none"
         style={{
           WebkitTextStroke: '1px rgba(255, 255, 255, 0.05)',
-          textStroke: '1px rgba(255, 255, 255, 0.05)',
-        }}
+        } as React.CSSProperties}
       >
         {personalInfo.nameHindi}
       </motion.h1>
