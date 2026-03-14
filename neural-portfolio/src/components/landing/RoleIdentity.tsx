@@ -8,10 +8,11 @@ export default function RoleIdentity() {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, delay: 0.8, ease: 'easeOut' }}
-      className="text-center mt-8"
+      transition={{ duration: 1, delay: 2.5, ease: 'easeOut' }}
+      className="text-center mt-6"
+      style={{ zIndex: 3 }}
     >
-      <p className="text-2xl md:text-3xl text-gray-400 font-light tracking-wide">
+      <p className="text-xl md:text-2xl lg:text-3xl text-gray-400 font-light tracking-wide">
         {personalInfo.tagline}
       </p>
     </motion.div>
