@@ -47,7 +47,7 @@ export interface Project {
   featured: boolean;
   image: string;
   link: string | null;
-  github?: string;
+  github?: string | null;
 }
 
 export interface Skills {
