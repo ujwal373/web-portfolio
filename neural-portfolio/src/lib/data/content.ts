@@ -79,7 +79,7 @@ export const personalInfo: PersonalInfo = {
   bio: "I'm a data professional with a strong background in analytics, AI, and cloud systems, currently pursuing my MSc in Data & Computational Science at University College Dublin. I specialize in designing data-driven and AI-powered solutions that bridge business and technology — from sustainability analytics to blockchain-integrated systems. My work blends analytical precision with creativity, aiming to make technology transparent, human-centered, and impactful.",
   email: "ujwal.mojidra@ucdconnect.ie",
   location: "Dublin, Ireland",
-  profileImage: "/images/profile-headshot.jpg",
+  profileImage: "/images/profile-headshot.png",
   profileImageDev: "/images/profile-developer.png",
   resumeUrl: "/ujwal-mojidra-resume.pdf"
 };
