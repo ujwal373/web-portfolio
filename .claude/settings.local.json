@@ -5,7 +5,8 @@
       "Bash(npx create-next-app@latest neural-portfolio --typescript --tailwind --app --src-dir --import-alias \"@/*\" --no-git)",
       "Bash(npx create-next-app@latest neural-portfolio --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --yes)",
       "Bash(npm install three @react-three/fiber @react-three/drei @react-three/postprocessing framer-motion gsap @studio-freight/lenis zustand clsx tailwind-merge simplex-noise @types/three)",
-      "Bash(dir /s /b)"
+      "Bash(dir /s /b)",
+      "Bash(vercel --version:*)"
     ],
     "deny": [],
     "ask": []
