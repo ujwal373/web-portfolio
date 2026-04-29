@@ -457,7 +457,7 @@ const Contact = () => {
             <div className="socials">
               <a className="social" href="https://github.com/ujwal373" target="_blank" rel="noreferrer"><span>↗</span><span>GitHub · @ujwal373</span><span className="arrow">→</span></a>
               <a className="social" href="https://www.linkedin.com/in/ujwalmojidra/" target="_blank" rel="noreferrer"><span>↗</span><span>LinkedIn · in/ujwalmojidra</span><span className="arrow">→</span></a>
-              <a className="social" href="#"><span>↗</span><span>Read CV · pdf</span><span className="arrow">→</span></a>
+              <a className="social" href="https://drive.google.com/file/d/19FGPJWB5P28Yy_9Jitb8ut253G5Tpawi/view?usp=sharing"><span>↗</span><span>Read CV · pdf</span><span className="arrow">→</span></a>
             </div>
           </div>
         </div>
