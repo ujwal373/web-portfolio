@@ -259,18 +259,49 @@ const Projects = () => {
 
 /* ===== Skills (periodic table + groups) ===== */
 const Skills = () => {
-  const grid = [
-    /* Languages / core */
-    [{ s: "Py", n: "Python", num: "01", cat: "lang", lvl: 95 }, { s: "Sql", n: "SQL", num: "02", cat: "lang", lvl: 92 }, { s: "R", n: "R Lang", num: "03", cat: "lang", lvl: 70 }, { s: "Sas", n: "SAS", num: "04", cat: "lang", lvl: 60 }, null, null, null],
-    /* AI / ML / Agents */
-    [{ s: "Ag", n: "AI Agents", num: "05", cat: "ai", lvl: 92 }, { s: "Lg", n: "LangGraph", num: "06", cat: "ai", lvl: 90 }, { s: "Lc", n: "LangChain", num: "07", cat: "ai", lvl: 90 }, { s: "Rag", n: "RAG", num: "08", cat: "ai", lvl: 92 }, { s: "Llm", n: "LLMs", num: "09", cat: "ai", lvl: 92 }, { s: "Nlp", n: "NLP", num: "10", cat: "ai", lvl: 86 }, { s: "Pt", n: "PyTorch", num: "11", cat: "ai", lvl: 84 }],
-    [{ s: "Sk", n: "Sklearn", num: "12", cat: "ai", lvl: 88 }, { s: "Pr", n: "Predictive", num: "13", cat: "ai", lvl: 88 }, { s: "Fc", n: "Forecasting", num: "14", cat: "ai", lvl: 84 }, { s: "An", n: "Anomaly Det.", num: "15", cat: "ai", lvl: 86 }, { s: "Op", n: "OpenAI API", num: "16", cat: "ai", lvl: 90 }, { s: "Ge", n: "Gemini", num: "17", cat: "ai", lvl: 86 }, { s: "Fa", n: "FAISS", num: "18", cat: "ai", lvl: 82 }],
-    /* Data engineering & analytics */
-    [{ s: "Etl", n: "ETL/ELT", num: "19", cat: "data", lvl: 92 }, { s: "Pbi", n: "Power BI", num: "20", cat: "data", lvl: 80 }, { s: "Tb", n: "Tableau", num: "21", cat: "data", lvl: 78 }, { s: "Xl", n: "Excel/Sheets", num: "22", cat: "data", lvl: 92 }, { s: "Ml", n: "MLflow", num: "23", cat: "data", lvl: 78 }, null, null],
-    /* Cloud / infra */
-    [{ s: "Aws", n: "AWS", num: "24", cat: "cloud", lvl: 80 }, { s: "Gcp", n: "GCP", num: "25", cat: "cloud", lvl: 82 }, { s: "Vx", n: "Vertex AI", num: "26", cat: "cloud", lvl: 78 }, { s: "Sb", n: "Supabase", num: "27", cat: "cloud", lvl: 80 }, { s: "Dk", n: "Docker", num: "28", cat: "cloud", lvl: 84 }, { s: "Ci", n: "CI/CD", num: "29", cat: "cloud", lvl: 75 }, null],
-    /* Tooling */
-    [{ s: "Git", n: "Git", num: "30", cat: "tool", lvl: 90 }, { s: "St", n: "Streamlit", num: "31", cat: "tool", lvl: 86 }, { s: "Fp", n: "FastAPI", num: "32", cat: "tool", lvl: 92 }, null, null, null, null],
+  /* Each element has: s=symbol, n=name, num=atomic number, cat=category, lvl=proficiency, col/row=grid position */
+  const elements = [
+    /* Row 1 - Languages anchors (like H and He) */
+    { s: "Py", n: "Python", num: "01", cat: "lang", lvl: 95, col: 1, row: 1 },
+    { s: "Sql", n: "SQL", num: "02", cat: "lang", lvl: 92, col: 10, row: 1 },
+
+    /* Row 2 - Languages + AI start */
+    { s: "R", n: "R Lang", num: "03", cat: "lang", lvl: 70, col: 1, row: 2 },
+    { s: "Sas", n: "SAS", num: "04", cat: "lang", lvl: 60, col: 2, row: 2 },
+    { s: "Ag", n: "AI Agents", num: "05", cat: "ai", lvl: 92, col: 6, row: 2 },
+    { s: "Lg", n: "LangGraph", num: "06", cat: "ai", lvl: 90, col: 7, row: 2 },
+    { s: "Lc", n: "LangChain", num: "07", cat: "ai", lvl: 90, col: 8, row: 2 },
+    { s: "Rag", n: "RAG", num: "08", cat: "ai", lvl: 92, col: 9, row: 2 },
+    { s: "Llm", n: "LLMs", num: "09", cat: "ai", lvl: 92, col: 10, row: 2 },
+
+    /* Row 3 - Data + AI */
+    { s: "Etl", n: "ETL/ELT", num: "10", cat: "data", lvl: 92, col: 1, row: 3 },
+    { s: "Pbi", n: "Power BI", num: "11", cat: "data", lvl: 80, col: 2, row: 3 },
+    { s: "Tb", n: "Tableau", num: "12", cat: "data", lvl: 78, col: 3, row: 3 },
+    { s: "Nlp", n: "NLP", num: "13", cat: "ai", lvl: 86, col: 6, row: 3 },
+    { s: "Pt", n: "PyTorch", num: "14", cat: "ai", lvl: 84, col: 7, row: 3 },
+    { s: "Sk", n: "Sklearn", num: "15", cat: "ai", lvl: 88, col: 8, row: 3 },
+    { s: "Pr", n: "Predictive", num: "16", cat: "ai", lvl: 88, col: 9, row: 3 },
+    { s: "Fc", n: "Forecasting", num: "17", cat: "ai", lvl: 84, col: 10, row: 3 },
+
+    /* Row 4 - Cloud + AI continued */
+    { s: "Aws", n: "AWS", num: "18", cat: "cloud", lvl: 80, col: 1, row: 4 },
+    { s: "Gcp", n: "GCP", num: "19", cat: "cloud", lvl: 82, col: 2, row: 4 },
+    { s: "Vx", n: "Vertex AI", num: "20", cat: "cloud", lvl: 78, col: 3, row: 4 },
+    { s: "Sb", n: "Supabase", num: "21", cat: "cloud", lvl: 80, col: 4, row: 4 },
+    { s: "Dk", n: "Docker", num: "22", cat: "cloud", lvl: 84, col: 5, row: 4 },
+    { s: "An", n: "Anomaly Det.", num: "23", cat: "ai", lvl: 86, col: 6, row: 4 },
+    { s: "Op", n: "OpenAI API", num: "24", cat: "ai", lvl: 90, col: 7, row: 4 },
+    { s: "Ge", n: "Gemini", num: "25", cat: "ai", lvl: 86, col: 8, row: 4 },
+    { s: "Fa", n: "FAISS", num: "26", cat: "ai", lvl: 82, col: 9, row: 4 },
+    { s: "Ml", n: "MLflow", num: "27", cat: "data", lvl: 78, col: 10, row: 4 },
+
+    /* Row 5 - Tooling + Data */
+    { s: "Git", n: "Git", num: "28", cat: "tool", lvl: 90, col: 1, row: 5 },
+    { s: "St", n: "Streamlit", num: "29", cat: "tool", lvl: 86, col: 2, row: 5 },
+    { s: "Fp", n: "FastAPI", num: "30", cat: "tool", lvl: 92, col: 3, row: 5 },
+    { s: "Ci", n: "CI/CD", num: "31", cat: "cloud", lvl: 75, col: 4, row: 5 },
+    { s: "Xl", n: "Excel/Sheets", num: "32", cat: "data", lvl: 92, col: 10, row: 5 },
   ];
 
   return (
@@ -284,28 +315,29 @@ const Skills = () => {
             { k: "ELEMENTS", v: "32" },
           ]}
         />
-        <div className="periodic periodic-7">
-          {grid.flat().map((el, i) => {
-            if (!el) return <div className="element empty" key={i} />;
-            return (
-              <div className={`element cat-${el.cat}`} key={i}>
-                <div style={{ display: "flex", justifyContent: "space-between" }}>
-                  <span className="e-num">{el.num}</span>
-                  <span className="e-num">{el.lvl}</span>
-                </div>
-                <div className="e-sym">{el.s}</div>
-                <div className="e-name">{el.n}</div>
-                <div className="e-bar" style={{ width: `${el.lvl}%` }} />
+        <div className="periodic-table">
+          {elements.map((el, i) => (
+            <div
+              className={`element cat-${el.cat}`}
+              key={i}
+              style={{ gridColumn: el.col, gridRow: el.row }}
+            >
+              <div className="e-header">
+                <span className="e-num">{el.num}</span>
+                <span className="e-lvl">{el.lvl}</span>
               </div>
-            );
-          })}
+              <div className="e-sym">{el.s}</div>
+              <div className="e-name">{el.n}</div>
+              <div className="e-bar" style={{ width: `${el.lvl}%` }} />
+            </div>
+          ))}
         </div>
         <div className="legend">
-          <div className="item"><span className="swatch" style={{ borderColor: "var(--w-80)" }} /> Languages</div>
-          <div className="item"><span className="swatch" style={{ borderColor: "var(--w-64)" }} /> AI / ML / Agentic</div>
-          <div className="item"><span className="swatch" style={{ borderColor: "var(--w-48)" }} /> Data / Analytics</div>
-          <div className="item"><span className="swatch" style={{ borderColor: "var(--w-24)" }} /> Cloud / Infra</div>
-          <div className="item"><span className="swatch" style={{ borderColor: "var(--w-12)" }} /> Tooling</div>
+          <div className="item"><span className="swatch cat-lang" /> Languages</div>
+          <div className="item"><span className="swatch cat-ai" /> AI / ML / Agentic</div>
+          <div className="item"><span className="swatch cat-data" /> Data / Analytics</div>
+          <div className="item"><span className="swatch cat-cloud" /> Cloud / Infra</div>
+          <div className="item"><span className="swatch cat-tool" /> Tooling</div>
         </div>
       </div>
     </section>
