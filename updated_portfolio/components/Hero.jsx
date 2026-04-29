@@ -137,14 +137,16 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="hero-watermark">उज्वल मोजिद्रा</div>
-
-      <div className="hero-portrait-wrap">
-        <div className="hero-portrait-ring r3" />
-        <div className="hero-portrait-ring r2" />
-        <div className="hero-portrait-ring" />
-        <div className="hero-portrait-pulse" />
-        <img className="hero-portrait-img" src="assets/update.png" alt="Ujwal Mojidra" />
+      <div className="hero-watermark-wrap">
+        <div className="hero-watermark left">उज्वल</div>
+        <div className="hero-portrait-wrap">
+          <div className="hero-portrait-ring r3" />
+          <div className="hero-portrait-ring r2" />
+          <div className="hero-portrait-ring" />
+          <div className="hero-portrait-pulse" />
+          <img className="hero-portrait-img" src="assets/update.png" alt="Ujwal Mojidra" />
+        </div>
+        <div className="hero-watermark right">मोजिद्रा</div>
       </div>
 
       <div className="hero-name-block">

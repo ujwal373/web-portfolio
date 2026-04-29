@@ -302,29 +302,44 @@ section:first-of-type {
   opacity: 0.32;
 }
 
-.hero-watermark {
+.hero-watermark-wrap {
   position: absolute;
   left: 50%;
   top: 46%;
   transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-watermark {
   font-family: var(--font-deva);
   font-weight: 700;
-  font-size: clamp(96px, 14vw, 220px);
-  color: rgba(255, 255, 255, 0.10);
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.16);
+  font-size: clamp(80px, 12vw, 180px);
+  color: rgba(255, 255, 255, 0.06);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.12);
   white-space: nowrap;
-  z-index: 1;
   letter-spacing: 0.02em;
-  pointer-events: none;
   line-height: 1;
+  z-index: 1;
+}
+
+.hero-watermark.left {
+  margin-right: -60px;
+  z-index: 0;
+}
+
+.hero-watermark.right {
+  margin-left: -60px;
+  z-index: 0;
 }
 
 .hero-portrait-wrap {
-  position: absolute;
-  left: 50%;
-  top: 46%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
+  position: relative;
+  z-index: 2;
   width: clamp(360px, 40vw, 580px);
   aspect-ratio: 1 / 1.1;
   display: grid;
