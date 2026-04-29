@@ -144,7 +144,7 @@ const Hero = () => {
         <div className="hero-portrait-ring r2" />
         <div className="hero-portrait-ring" />
         <div className="hero-portrait-pulse" />
-        <img className="hero-portrait-img" src="assets/ujwal-portrait.png" alt="Ujwal Mojidra" />
+        <img className="hero-portrait-img" src="assets/update.png" alt="Ujwal Mojidra" />
       </div>
 
       <div className="hero-name-block">
