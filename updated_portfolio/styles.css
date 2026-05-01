@@ -564,8 +564,8 @@ section:first-of-type {
   left: 50%;
   transform: translateX(-50%);
   font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--w-48);
+  font-size: 13px;
+  color: var(--fg);
   letter-spacing: 0.06em;
   z-index: 5;
   display: flex;
