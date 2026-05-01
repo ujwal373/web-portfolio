@@ -62,8 +62,6 @@ const Hero = () => {
 
   return (
     <section className="hero" id="home">
-      <BinaryRain />
-
       <div className="hero-corners">
         <div className="hero-corner tl">
           <div className="row"><span className="dot" /><span>SYS·ONLINE</span></div>
