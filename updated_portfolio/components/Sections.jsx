@@ -352,7 +352,7 @@ const Awards = () => {
       glyph: "★",
       title: "Best Prototype Power Award",
       where: "[ UCD Hackathon · Team ]",
-      desc: "Recognised for technical problem-solving, rapid prototyping, and collaboration on the BeeZen Wellness App.",
+      desc: "Recognised for technical problem-solving, rapid prototyping, and collaboration on the BeeZen Wellness App. Built a mental wellness platform with AI-driven journaling and mood tracking in under 24 hours.",
       href: "https://www.linkedin.com/in/ujwalmojidra/details/honors/1732279145167/single-media-viewer/",
     },
     {
@@ -360,7 +360,7 @@ const Awards = () => {
       glyph: "◆",
       title: "AstraAI · Hackathon Winner · €3,000",
       where: "[ Strange Data · Team ]",
-      desc: "Led development of a multi-agent AI system for spectral data analysis. 85%+ model accuracy under competitive constraints.",
+      desc: "Led development of a multi-agent AI system for spectral data analysis using LangGraph and Claude. Achieved 85%+ model accuracy under competitive constraints, competing against 20+ teams across Ireland.",
       href: "https://www.linkedin.com/posts/nomad-ai-tech_what-an-incredible-end-to-the-strange-data-activity-7429566275636322304-6zwD",
     },
     {
@@ -368,7 +368,7 @@ const Awards = () => {
       glyph: "✦",
       title: "3rd Place · Balbriggan EcoCore Challenge",
       where: "[ Sustainability · Team ]",
-      desc: "Co-led a structured, data-driven scoring model for sustainability performance. Recognised for impact and clarity.",
+      desc: "Co-led a structured, data-driven scoring model for sustainability performance. Developed metrics framework and visualization dashboard to track environmental impact across Balbriggan businesses.",
       href: "https://www.linkedin.com/in/ujwalmojidra/details/honors/1734654859887/single-media-viewer/",
     },
     {
@@ -376,7 +376,7 @@ const Awards = () => {
       glyph: "▲",
       title: "UCD Advantage Award",
       where: "[ UCD Cricket · Team ]",
-      desc: "Honoured for leadership, teamwork, and mentoring. Represented UCD in national competitions.",
+      desc: "Honoured for leadership, teamwork, and mentoring within UCD Cricket Club. Represented UCD in national competitions and contributed to community building and student engagement initiatives.",
       href: "https://www.linkedin.com/in/ujwalmojidra/overlay/1742832129182/single-media-viewer/",
     },
     {
@@ -384,7 +384,7 @@ const Awards = () => {
       glyph: "◇",
       title: "Superteam Ireland · Bounty Winner",
       where: "[ Solana Foundation ]",
-      desc: "Awarded for AI automation tools improving onboarding workflows and information access in distributed environments.",
+      desc: "Awarded for building AI automation tools to streamline university student onboarding to Superteam Ireland. Created intelligent workflows using Claude API for information access in Web3 communities.",
       href: "https://earn.superteam.fun/listing/bounty-create-a-system-to-onboard-university-students-to-superteam-ireland",
     },
   ];
