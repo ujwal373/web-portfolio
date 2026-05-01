@@ -346,72 +346,41 @@ section:first-of-type {
   place-items: center;
 }
 
-.hero-portrait-ring {
+/* Portrait grid background */
+.hero-portrait-grid {
   position: absolute;
-  inset: -8%;
-  border-radius: 50%;
+  inset: -20%;
+  background-image:
+    linear-gradient(to right, var(--w-08) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--w-08) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(ellipse 70% 70% at center, black 20%, transparent 70%);
+  -webkit-mask-image: radial-gradient(ellipse 70% 70% at center, black 20%, transparent 70%);
+  opacity: 0.8;
+}
+
+/* Subtle corner accents */
+.hero-portrait-grid::before,
+.hero-portrait-grid::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
   border: 1px solid var(--w-16);
 }
 
-.hero-portrait-ring.r2 {
-  inset: -16%;
-  border-color: var(--w-08);
-  animation: spin 60s linear infinite;
+.hero-portrait-grid::before {
+  top: 15%;
+  left: 15%;
+  border-right: none;
+  border-bottom: none;
 }
 
-.hero-portrait-ring.r2::before,
-.hero-portrait-ring.r2::after {
-  content: "";
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  background: var(--fg);
-  border-radius: 50%;
-  top: -3px;
-  left: 50%;
-}
-
-.hero-portrait-ring.r2::after {
-  top: auto;
-  bottom: -3px;
-  background: var(--w-32);
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg)
-  }
-
-  to {
-    transform: rotate(360deg)
-  }
-}
-
-.hero-portrait-ring.r3 {
-  inset: -24%;
-  border-color: var(--w-04);
-  border-style: dashed;
-}
-
-.hero-portrait-pulse {
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  border: 2px solid var(--fg);
-  animation: pulse 3s ease-out infinite;
-  opacity: 0;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(0.95);
-    opacity: 0.5
-  }
-
-  100% {
-    transform: scale(1.3);
-    opacity: 0
-  }
+.hero-portrait-grid::after {
+  bottom: 15%;
+  right: 15%;
+  border-left: none;
+  border-top: none;
 }
 
 .hero-portrait-img {
