@@ -1087,7 +1087,7 @@ section:first-of-type {
 
 .proj-desc {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 13px;
   color: var(--w-48);
   line-height: 1.6;
   margin-top: 8px;
@@ -1379,7 +1379,7 @@ section:first-of-type {
 
 .award .where {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 13px;
   color: var(--w-48);
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -1585,7 +1585,7 @@ section:first-of-type {
   padding-top: 14px;
   border-top: var(--hair);
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 13px;
   line-height: 1.6;
   color: var(--w-48);
 }
