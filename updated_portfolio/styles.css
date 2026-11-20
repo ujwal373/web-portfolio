@@ -38,7 +38,7 @@ body {
 }
 
 body {
-  cursor: none;
+  cursor: default;
   font-feature-settings: "ss01", "cv11";
 }
 

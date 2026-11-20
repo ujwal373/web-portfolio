@@ -1,45 +1,6 @@
 /* === Navigation, custom cursor, scroll progress, command palette === */
 
-const Cursor = () => {
-  const dotRef = React.useRef(null);
-  const ringRef = React.useRef(null);
-  React.useEffect(() => {
-    let x = 0, y = 0, rx = 0, ry = 0;
-    const onMove = (e) => { x = e.clientX; y = e.clientY; };
-    const onOver = (e) => {
-      if (e.target.closest("a, button, .exp-card, .proj, .element, .award, .email-row, .social, .nav-cmd"))
-        ringRef.current?.classList.add("hover");
-    };
-    const onOut = (e) => {
-      if (e.target.closest("a, button, .exp-card, .proj, .element, .award, .email-row, .social, .nav-cmd"))
-        ringRef.current?.classList.remove("hover");
-    };
-    window.addEventListener("mousemove", onMove);
-    window.addEventListener("mouseover", onOver);
-    window.addEventListener("mouseout", onOut);
-    let raf;
-    const loop = () => {
-      rx += (x - rx) * 0.18;
-      ry += (y - ry) * 0.18;
-      if (dotRef.current) dotRef.current.style.transform = `translate(${x}px, ${y}px) translate(-50%, -50%)`;
-      if (ringRef.current) ringRef.current.style.transform = `translate(${rx}px, ${ry}px) translate(-50%, -50%)`;
-      raf = requestAnimationFrame(loop);
-    };
-    loop();
-    return () => {
-      window.removeEventListener("mousemove", onMove);
-      window.removeEventListener("mouseover", onOver);
-      window.removeEventListener("mouseout", onOut);
-      cancelAnimationFrame(raf);
-    };
-  }, []);
-  return (
-    <>
-      <div ref={dotRef} className="cursor-dot" />
-      <div ref={ringRef} className="cursor-ring" />
-    </>
-  );
-};
+const Cursor = () => null;
 
 const ScrollProgress = () => {
   const ref = React.useRef(null);
@@ -88,8 +49,8 @@ const CommandPalette = ({ open, setOpen }) => {
     { k: "GO", label: "Jump to · Awards", to: "#awards" },
     { k: "GO", label: "Jump to · Contact", to: "#contact" },
     { k: "DO", label: "Copy email · ujwal@example.com", action: () => navigator.clipboard?.writeText("ujwal@example.com") },
-    { k: "EXT", label: "Open · GitHub", action: () => window.open("https://github.com", "_blank") },
-    { k: "EXT", label: "Open · LinkedIn", action: () => window.open("https://linkedin.com", "_blank") },
+    { k: "EXT", label: "Open · GitHub", action: () => window.open("https://github.com/ujwal373", "_blank") },
+    { k: "EXT", label: "Open · LinkedIn", action: () => window.open("https://www.linkedin.com/in/ujwalmojidra/", "_blank") },
     { k: "SYS", label: "Toggle terminal mode (coming soon)" },
   ];
   const filtered = items.filter(i => i.label.toLowerCase().includes(q.toLowerCase()));
